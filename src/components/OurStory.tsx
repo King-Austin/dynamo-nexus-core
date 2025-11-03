@@ -66,7 +66,7 @@ const OurStory = () => {
   ];
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: 'hsl(var(--story-bg))' }}>
+    <section className="py-20 px-4 bg-primary">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}

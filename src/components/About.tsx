@@ -52,32 +52,7 @@ const About = () => {
           </div>
         </div>
 
-        <div 
-          ref={cardsRef}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16"
-        >
-          {values.map((value, index) => (
-            <Card 
-              key={index} 
-              className={`card-hover border-2 bg-card transition-all duration-700 ${
-                cardsInView 
-                  ? 'opacity-100 translate-y-0' 
-                  : 'opacity-0 translate-y-10'
-              }`}
-              style={{ 
-                transitionDelay: cardsInView ? `${index * 150}ms` : '0ms'
-              }}
-            >
-              <CardContent className="pt-6 sm:pt-8 pb-6 sm:pb-8 text-center">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 animate-bounce-subtle">
-                  <value.icon className="h-7 w-7 sm:h-8 sm:w-8 text-accent" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-primary mb-3 sm:mb-4">{value.title}</h3>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+
       </div>
     </section>
   );

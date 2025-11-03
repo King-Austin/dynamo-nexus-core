@@ -27,7 +27,6 @@ const Index = () => {
 
         
       <div className="min-h-screen bg-background">
-        <VisionMissionValues />
         <ValueProposition />
         <div className="my-6">
           <OurStory />

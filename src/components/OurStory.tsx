@@ -18,7 +18,7 @@ const CountUpAnimation = ({ end, duration = 2000 }: { end: string; duration?: nu
       (entries) => {
         if (entries[0].isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true;
-          
+
           const endNum = parseFloat(end.replace(/[^0-9.]/g, ''));
           const suffix = end.replace(/[0-9.]/g, '');
           const increment = endNum / (duration / 16);
@@ -80,7 +80,7 @@ const OurStory = () => {
 
           {/* Content Section */}
           <div className="space-y-8">
-            <h2 
+            <h2
               className="text-4xl md:text-5xl font-bold text-white"
             >
               OUR STORY
@@ -88,26 +88,26 @@ const OurStory = () => {
 
             <div className="space-y-6 text-white/90 text-base leading-relaxed">
               <p>
-                Founded in 2013 by visionary entrepreneur Hon. Aneto Samuel Onyema, Dynamo Group Ltd 
-                began as Dynamo Industries, a small gas and energy business. Over time, it expanded into 
-                Real Estate, Agriculture, Construction, Media, Human Resource Development, Legal Services, 
+                Founded in 2013 by visionary entrepreneur Hon. Aneto Samuel Onyema, Dynamo Group Ltd
+                began as Dynamo Industries, a small gas and energy business. Over time, it expanded into
+                Real Estate, Agriculture, Construction, Media, Human Resource Development, Legal Services,
                 and Education, becoming one of Nigeria's fastest-growing multi-sector companies.
               </p>
 
               <p>
-                By 2020, the company launched Dynamo Agro Food and Farms Ltd, investing in palm oil, rice 
-                production, and agro-layouts across several states. In 2022, Dynamo developed over 21 estates 
+                By 2020, the company launched Dynamo Agro Food and Farms Ltd, investing in palm oil, rice
+                production, and agro-layouts across several states. In 2022, Dynamo developed over 21 estates
                 nationwide with flexible payment plans, making homeownership more accessible.
               </p>
 
               <p>
-                Through Empire School of Intelligence and Wolves & Metrics, Dynamo empowers young Nigerians 
-                with business, tech, and leadership skills. With branches in Abuja, Anambra, and Delta, the 
+                Through Empire School of Intelligence and Wolves & Metrics, Dynamo empowers young Nigerians
+                with business, tech, and leadership skills. With branches in Abuja, Anambra, and Delta, the
                 company continues to build communities, create jobs, and drive innovation across industries.
               </p>
 
               <p>
-                Today, Dynamo stands as a diversified powerhouse—committed to progress, empowerment, 
+                Today, Dynamo stands as a diversified powerhouse—committed to progress, empowerment,
                 and sustainable development across Africa.
               </p>
             </div>
@@ -119,7 +119,7 @@ const OurStory = () => {
                   <div className="flex justify-center">
                     <stat.icon className="w-12 h-12 text-white" strokeWidth={1.5} />
                   </div>
-                  <div 
+                  <div
                     className="text-3xl md:text-4xl font-bold"
                     style={{ color: 'hsl(var(--story-accent))' }}
                   >
